@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-[#030616] overscroll-none" data-lang="en">
+<html lang="en" class="overscroll-none" data-lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,11 +52,12 @@
         font-display: block;
       }
       /* Ensure background colors are applied immediately (not relying on Tailwind) */
+      html, body, main {
+        background-color: #1E243C;
+      }
       html {
         background-color: #030616;
-      }
-      body {
-        background-color: #1E243C;
+        min-height: 100vh;
       }
       /* Prevent FOUT by hiding content until fonts load */
       .fonts-loading > *:not(script) {
